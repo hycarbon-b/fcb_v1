@@ -35,8 +35,6 @@ Python = 3.7, Pytorch = 1.8.0, Torchvision = 1.9.0, CUDA = 11.1
 		|-- ...
 
 ```
-                
-#### Preprocess
 
 #### Train
 
