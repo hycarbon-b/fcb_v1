@@ -1,0 +1,91 @@
+{
+    "os": "Linux-6.2.0-36-generic-x86_64-with-debian-buster-sid",
+    "python": "3.7.10",
+    "heartbeatAt": "2023-12-01T07:26:57.112099",
+    "startedAt": "2023-12-01T07:26:56.312472",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--dataset=siim",
+        "--data-root=/code/fcbformer/zhou/originalfile/SIIM-ACR-Pneumothorax-Seg-XR/",
+        "--batch-size=4",
+        "--learning-rate-scheduler-minimum=0",
+        "--epochs=5"
+    ],
+    "state": "running",
+    "program": "/code/fcbformer/zhou/FCBFormer/train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": null,
+        "commit": null
+    },
+    "email": null,
+    "root": "/code/fcbformer/zhou/FCBFormer",
+    "host": "1b668aab2951",
+    "username": "root",
+    "executable": "/opt/conda/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3724.708125,
+        "min": 800.0,
+        "max": 4000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3700.05,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3700.075,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3699.973,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3700.07,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3700.056,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3700.017,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3700.048,
+            "min": 800.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3700.063,
+            "min": 800.0,
+            "max": 4000.0
+        }
+    ],
+    "disk": {
+        "total": 915.3213348388672,
+        "used": 436.5013656616211
+    },
+    "gpu": "NVIDIA GeForce RTX 2080 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 15.57358169555664
+    }
+}

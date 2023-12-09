@@ -1,0 +1,25 @@
+
+
+
+
+
+
+Train Epoch: 1 [92/95 (100.0%)]	Average loss: 1.141048	Time: 15.090060
+Test  Epoch: 1 [5/5 (100.0%)]	Average performance: 0.002126	Time: 0.750658
+Saving...
+/opt/conda/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:163: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+Traceback (most recent call last):
+  File "/code/fcbformer/zhou/FCBFormer/train.py", line 251, in <module>
+    main()
+  File "/code/fcbformer/zhou/FCBFormer/train.py", line 247, in main
+    train(args)
+  File "/code/fcbformer/zhou/FCBFormer/train.py", line 211, in train
+    "Trained models/FCBFormer_" + args.dataset + ".pt",
+  File "/opt/conda/lib/python3.7/site-packages/torch/serialization.py", line 422, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/opt/conda/lib/python3.7/site-packages/torch/serialization.py", line 309, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "/opt/conda/lib/python3.7/site-packages/torch/serialization.py", line 287, in __init__
+    super(_open_zipfile_writer_file, self).__init__(torch._C.PyTorchFileWriter(str(name)))
+RuntimeError: Parent directory Trained models does not exist.
