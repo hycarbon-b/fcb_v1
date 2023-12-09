@@ -38,27 +38,22 @@ Python = 3.7, Pytorch = 1.8.0, Torchvision = 1.9.0, CUDA = 11.1
                 
 #### Preprocess
 
-1. Use `scale.py` to scale up the orginal images (some original shape (D, W, H) is (D, 512, 512)) to (D, 1024, 1024)
-2. Use `utils/preprocess.py` to preprocess the converted data.
-
 #### Train
-Change training configuration and data configuration in `config.py`, especially the path to your preprocessed data.
 
-You can change network configuration in `net/config.py`, then run training script:
+Specify `dataset` and  `data-root` to the file path 
 
 ```
-python train.py
+python train.py --dataset siim --data-root $root_path
+
 ```
 
-Your ckpt will be saved in `results/experiment_5/model`. You can change it in the `config.py`.
+Your ckpt will be saved in ` `. You can change it in the ` `.
 
-For training, using Adam optimizer, lr = 0.001, batch size = 1, epoch = 100
+For training, lr = 0.001, batch size = 1, epoch = 100
 #### Inference
 
-For checkpoint, see [UaNet_HaN-Seg_bs1_epoch100](https://github.com/Richardqiyi/UaNet_OAR/releases/tag/UaNet_HaN-Seg_bs1_epoch100)
 
 ```
-python mytest.py test --weight $PATH_TO_WEIGHT --nrrd-path $DICOM_PATH --out-dir $OUTPUT_DIR
+python predict.py --train-dataset --test-dataset --data-root 
 ```
 
-Can only inference one image at a time.
