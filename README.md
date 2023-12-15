@@ -1,31 +1,30 @@
 # FCBFormer
 For original repo, see [FCBFormer](https://github.com/ESandML/FCBFormer)
 
-## Dataset
+#### Dataset
 
 [SIIM-ACR Pneumothorax Segmentation](https://www.kaggle.com/datasets/stevezeyuzhang/siim-acr-pneumothorax-segmentation)
 
-## Environment
+#### Environment
 
 Python = 3.7, Pytorch = 1.8.0, Torchvision = 1.9.0, CUDA = 11.1 
 
-### Docker
+#### Docker
 ```
 docker pull stevezeyuzhang/colab:1.7.1
 ```
-
-### Install dependencies
+#### Install dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-### GPU
+#### GPU
 
 1 NVIDIA GeForce RTX 2080 Ti 11G
 
 
-## File Directory
+#### File Directory
 ```
 |-- root
    |-- FCBFormer
@@ -48,7 +47,7 @@ pip install -r requirements.txt
 		|-- ...
 ```
 
-## Train
+#### Train
 
 For training, lr = `1e-4`, batch size = `16`, epoch = `200`, optimizer = `AdamW`, lr_scheduler = `CosineAnnealingLR`
 
@@ -79,7 +78,7 @@ Argument Details
 
 Your checkpoints will be saved in `/code/fcbformer/zhou/Trained_models`. You can change it in the `train.py`.
 
-## Inference
+#### Inference
 
 We provide checkpoints:
 
