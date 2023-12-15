@@ -163,8 +163,8 @@ def train(args):
         optimizer,
     ) = build(args)
 
-    if not os.path.exists("/code/fcbformer/zhou/Trained models"):
-        os.makedirs("/code/fcbformer/zhou/Trained models")
+    if not os.path.exists("/code/fcbformer/zhou/Trained_models"):
+        os.makedirs("/code/fcbformer/zhou/Trained_models")
 
     prev_best_test = None
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
