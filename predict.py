@@ -55,7 +55,7 @@ def build(args):
     model = models.FCBFormer()
 
     state_dict = torch.load(
-        "./Trained models/FCBFormer_{}.pt".format(args.train_dataset)
+        "./Trained_models/FCBFormer_{}.pt".format(args.train_dataset)
     )
     model.load_state_dict(state_dict["model_state_dict"])
 
@@ -70,15 +70,15 @@ def predict(args):
 
     if not os.path.exists("./Predictions"):
         os.makedirs("./Predictions")
-    if not os.path.exists("./Predictions/Trained on {}".format(args.train_dataset)):
-        os.makedirs("./Predictions/Trained on {}".format(args.train_dataset))
+    if not os.path.exists("./Predictions/Trained_on_{}".format(args.train_dataset)):
+        os.makedirs("./Predictions/Trained_on_{}".format(args.train_dataset))
     if not os.path.exists(
-        "./Predictions/Trained on {}/Tested on {}".format(
+        "./Predictions/Trained_on_{}/Tested_on_{}".format(
             args.train_dataset, args.test_dataset
         )
     ):
         os.makedirs(
-            "./Predictions/Trained on {}/Tested on {}".format(
+            "./Predictions/Trained_on_{}/Tested_on_{}".format(
                 args.train_dataset, args.test_dataset
             )
         )
@@ -104,7 +104,7 @@ def predict(args):
 
 
         cv2.imwrite(
-            "./Predictions/Trained on {}/Tested on {}/{}".format(
+            "./Predictions/Trained_on_{}/Tested_on_{}/{}".format(
                 args.train_dataset, args.test_dataset, os.path.basename(target_paths[i])
             ),
             predicted_map * 255,
