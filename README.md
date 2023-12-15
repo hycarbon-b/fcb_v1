@@ -27,6 +27,12 @@ pip install -r requirements.txt
 ```
 
 |-- root
+   |-- FCBFormer
+	|-- Data
+	|-- Metrics
+	|-- Models
+	|-- wandb
+   |-- originalfile
 	|-- imagesTr
 		|-- 1.png
 		|-- ...
@@ -36,7 +42,7 @@ pip install -r requirements.txt
 	|-- imagesTs
 		|-- 1.png
 		|-- ...
-	|-- labelssTs
+	|-- labelsTs
 		|-- 1.png
 		|-- ...
 
