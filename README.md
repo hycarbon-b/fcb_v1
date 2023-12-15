@@ -3,6 +3,8 @@ For original repo, see [FCBFormer](https://github.com/ESandML/FCBFormer)
 
 ## Dataset
 
+[SIIM-ACR Pneumothorax Segmentation](https://www.kaggle.com/datasets/stevezeyuzhang/siim-acr-pneumothorax-segmentation)
+
 ## Environment
 
 Python = 3.7, Pytorch = 1.8.0, Torchvision = 1.9.0, CUDA = 11.1 
