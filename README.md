@@ -36,7 +36,7 @@ pip install -r requirements.txt
 	|-- imagesTr
 		|-- 1.png
 		|-- ...
-	|-- labelssTr
+	|-- labelsTr
 		|-- 1.png
 		|-- ...
 	|-- imagesTs
