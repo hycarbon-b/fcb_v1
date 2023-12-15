@@ -79,7 +79,7 @@ We provide checkpoints:
 
 | checkpoints | logs |
 |--------|--------|
-| []() | [log]() |
+| [siim_adamw_cos_lr1e-4_bs4_epoch200](https://github.com/hycarbon-b/fcb_v1/releases/download/siim_adamw_cos_lr1e-4_bs4_epoch200/siim_adamw_cos_lr1e-4_bs4_epoch200.pt) | [log](https://github.com/hycarbon-b/fcb_v1/releases/download/siim_adamw_cos_lr1e-4_bs4_epoch200/siim_adamw_cos_lr1e-4_bs4_epoch200.log) |
 
 
 If your using the checkpoints we provided, please rename it as `FCBFormer_{}.pt`.
