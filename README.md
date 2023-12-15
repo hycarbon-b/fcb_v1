@@ -1,5 +1,5 @@
-# fcbformer
-For original repo, see [fcbfomer](https://github.com/ESandML/FCBFormer)
+# FCBFormer
+For original repo, see [FCBFormer](https://github.com/ESandML/FCBFormer)
 
 ## Dataset
 
