@@ -16,6 +16,10 @@ Python = 3.7, Pytorch = 1.8.0, Torchvision = 1.9.0, CUDA = 11.1
 
 #### Install dependencies
 
+```
+pip install -r requirements.txt
+```
+
 
 #### File Directory
 ```
