@@ -1,29 +1,29 @@
 # fcbformer
 For original repo, see [fcbfomer](https://github.com/ESandML/FCBFormer)
 
-#### Dataset
+## Dataset
 
-#### Environment
+## Environment
 
 Python = 3.7, Pytorch = 1.8.0, Torchvision = 1.9.0, CUDA = 11.1 
 
-#### GPU
-
-1 NVIDIA GeForce RTX 2080
-
-#### Docker
+### Docker
 ```
 docker pull stevezeyuzhang/colab:1.7.1
 ```
 
-#### Install dependencies
+### Install dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
+### GPU
 
-#### File Directory
+1 NVIDIA GeForce RTX 2080
+
+
+## File Directory
 ```
 
 |-- root
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ```
 
-#### Train
+## Train
 
 Specify `dataset` and  `data-root` to the file path 
 
@@ -54,8 +54,9 @@ python train.py --dataset siim --data-root $root_path
 Your ckpt will be saved in `/code/fcbformer/zhou/Trained_models`. You can change it in the `train.py`.
 
 For training, lr = `1e-4`, batch size = `16`, epoch = `200`, optimizer = `AdamW`, lr_scheduler = `CosineAnnealingLR`
-#### Inference
+## Inference
 
+If your using the pretrain we provided, please rename it as `FCBFormer_{}.pt`.
 
 ```
 python predict.py --train-dataset --test-dataset --data-root 
