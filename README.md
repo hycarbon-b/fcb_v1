@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 ### GPU
 
-1 NVIDIA GeForce RTX 2080
+1 NVIDIA GeForce RTX 2080 Ti 11G
 
 
 ## File Directory
