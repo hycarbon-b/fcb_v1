@@ -12,7 +12,9 @@ Python = 3.7, Pytorch = 1.8.0, Torchvision = 1.9.0, CUDA = 11.1
 1 NVIDIA GeForce RTX 2080
 
 #### Docker
-
+```
+docker pull stevezeyuzhang/colab:1.7.1
+```
 
 #### Install dependencies
 
