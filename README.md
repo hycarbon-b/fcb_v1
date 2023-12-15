@@ -25,7 +25,6 @@ pip install -r requirements.txt
 
 ## File Directory
 ```
-
 |-- root
    |-- FCBFormer
 	|-- Data
@@ -45,7 +44,6 @@ pip install -r requirements.txt
 	|-- labelsTs
 		|-- 1.png
 		|-- ...
-
 ```
 
 ## Train
