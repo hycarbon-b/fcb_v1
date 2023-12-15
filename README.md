@@ -53,7 +53,7 @@ python train.py --dataset siim --data-root $root_path
 
 Your ckpt will be saved in `/code/fcbformer/zhou/Trained_models`. You can change it in the `train.py`.
 
-For training, lr = 0.001, batch size = 1, epoch = 100
+For training, lr = `1e-4`, batch size = `16`, epoch = `200`, optimizer = `AdamW`, lr_scheduler = `CosineAnnealingLR`
 #### Inference
 
 
